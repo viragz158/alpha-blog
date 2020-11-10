@@ -24,4 +24,11 @@ class ArticlesTest < ApplicationSystemTestCase
     assert_text "Creating an Article"
   end
 
+  test "viewing the samnple article" do
+    visit articles_path
+    assert_selector "h1", text: "Articles listing page"
+    click_on "Show", match: :first
+    assert_text "this is test description"
+  end
+
 end
