@@ -1,0 +1,11 @@
+first:
+  title: test title
+  description: this is test description
+
+second:
+  title: second article
+  description: hello world this is my description
+
+third:
+  title: Amazing third article
+  description: Amazing third article description
