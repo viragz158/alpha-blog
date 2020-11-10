@@ -1,6 +1,10 @@
 require "application_system_test_case"
 
 class ArticlesTest < ApplicationSystemTestCase
+  setup do
+    @article = articles(:second)
+  end
+
   test "visiting the new articles page" do
     visit new_article_url
   
@@ -29,6 +33,12 @@ class ArticlesTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Articles listing page"
     click_on "Show", match: :first
     assert_text "this is test description"
+  end
+
+  test "viewing first article" do
+    visit article_path(@article)
+    assert_selector "h1", text: "Showing Articles Details"
+    assert_text "hello world this is my description"
   end
 
 end

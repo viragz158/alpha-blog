@@ -1,11 +1,14 @@
 first:
+  id: 1
   title: test title
   description: this is test description
 
 second:
+  id: 2
   title: second article
   description: hello world this is my description
 
 third:
+  id: 3
   title: Amazing third article
   description: Amazing third article description
