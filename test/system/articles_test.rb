@@ -37,6 +37,7 @@ class ArticlesTest < ApplicationSystemTestCase
 
   test "viewing first article" do
     visit article_path(@article)
+    byebug
     assert_selector "h1", text: "Showing Articles Details"
     assert_text "hello world this is my description"
   end
