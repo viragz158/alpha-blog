@@ -39,3 +39,9 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+vendor/cache/
+
+msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz
+
+msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz.sig
